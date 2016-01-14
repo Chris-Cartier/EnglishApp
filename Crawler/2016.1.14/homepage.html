@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home Page</title>
+</head>
+
+<body>
+<h1>Home Page</h1>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
+    <form method="post" action="player.html">
+{% for list in lists %}
+    <li><input type="submit" value={{ list.title }}>
+        <p>{{ list.crawlDate }}</p>
+    </li>
+{% endfor %}
+
+{#window.location.href='player.html'#}
+
+</form>
+
+</div>
+</body>
+</html>
